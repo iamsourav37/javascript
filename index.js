@@ -18,3 +18,40 @@ console.log(`Pre Decrement Opeator : ${--num2}`);
 
 num2--;
 console.log(num2);
+
+
+console.log("Relational Operator :");
+
+var age1 = 22;
+var age2 = 17;
+
+console.log(age1==age2);
+console.log(age1!=age2);
+
+
+console.log(`age1 is greater then age2 : ${age1>age2}`);
+
+console.log("Logical operator : ");
+
+
+var name = 'Javascript';
+var isProgLang = true;
+
+console.log(name == "Javascript" && isProgLang );
+
+console.log(name=="javascript" || isProgLang);
+console.log(name=="javascript" || false);
+
+
+
+
+
+
+
+
+
+
+
+
+
+

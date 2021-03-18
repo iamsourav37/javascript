@@ -1,21 +1,13 @@
-console.log("Hello World");
 
 
-function sayHello(name){
-    console.log("Hello "+name);
-}
+var myName = "Sourav Ganguly";
 
-function add(num1, num2){
-    return num1+num2;
-}
+console.log(typeof(myName));
 
+var myAge = 22;
 
-sayHello("Sourav Ganguly");
+console.log(typeof(myAge));
 
-let fun = add;
+var flag = true;
 
-console.log(fun(3, 4));
-
-function btnClick(){
-    console.log("Button clicked");
-}
+console.log(typeof(flag));

@@ -66,3 +66,44 @@ console.log(flag);
 let a4 = [23, 32, 21, 12];
 console.log(a4.includes(21));
 console.log(a4.includes(20));
+
+// sorting numerically
+
+let age = [21, 15, 22, 17, 15, 8, 32, 6];
+let age2 = [19, 21, 16, 13, 10, 18, 34, 30];
+
+// By default, the sort() function sorts values as strings
+age.sort((a, b) => a - b); // ascending order
+console.log(age);
+
+age2.sort((a, b) => b - a);
+console.log(age2);
+
+// sorting objects
+
+let person = [
+    {
+        name: "Sourav",
+        age : 22
+    },
+    {
+        name: "Gourab",
+        age : 17
+    },
+    {
+        name: "Ratul",
+        age : 23
+    },
+    {
+        name: "Raja",
+        age : 23
+    },
+    {
+        name: "Rana",
+        age : 19,
+    }
+];
+
+console.log("Before sorting :", person);
+person.sort( ( a, b ) => a.age - b.age );
+console.log("After sorting :",person);

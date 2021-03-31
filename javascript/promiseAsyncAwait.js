@@ -26,12 +26,17 @@
 // });
 
 const getData = async () => {
-  const response = await fetch("https://api.github.com/users/1");
+  const response = await fetch("https://ai.github.com/users/1");
   const data = await response.json();
   return data;
 };
 
-getData().then((data) => {
-  console.log("Inside then method");
-  console.log("data : ", data);
-});
+getData()
+  .then((data) => {
+    console.log("Inside then method");
+    console.log("data : ", data);
+  })
+  .catch((error) => {
+    console.log("Inside catch method");
+    console.log("ERROR MESSAGE : ", error);
+  });

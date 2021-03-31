@@ -25,10 +25,35 @@
 //   }, 2000);
 // });
 
+// const getData = async () => {
+//   console.log("first line of getData() method");
+//   const response = await fetch("https://api.github.com/users/1");
+//   console.log("after fetch mehtod");
+
+//   const data = await response.json();
+//   return data;
+// };
+
+// getData()
+//   .then((data) => {
+//     console.log("Inside then method");
+//     console.log("data : ", data);
+//   })
+//   .catch((error) => {
+//     console.log("Inside catch method");
+//     console.log("ERROR MESSAGE : ", error);
+//   });
+
 const getData = async () => {
-  const response = await fetch("https://ai.github.com/users/1");
-  const data = await response.json();
-  return data;
+  const response = await fetch("hello");
+  // console.log("Response :", response);
+  console.log("response status code :", response.status);
+
+  if (response.status == 200) {
+    return response;
+  } else {
+    throw new Error("something wrong in the API");
+  }
 };
 
 getData()
@@ -38,5 +63,5 @@ getData()
   })
   .catch((error) => {
     console.log("Inside catch method");
-    console.log("ERROR MESSAGE : ", error);
+    console.log("ERROR MESSAGE : ", error.message);
   });
